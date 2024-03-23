@@ -1,0 +1,76 @@
+body {
+    font-family: Arial, sans-serif;
+}
+
+header, footer {
+    background-color: #f8f9fa;
+    padding: 10px 0;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+aside {
+    background-color: #f0f0f0;
+    padding: 10px;
+    margin: 20px 0;
+}
+
+.about-section {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.section-title {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+
+.profile-photo {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover; /* Ensures the photo covers the space without losing aspect ratio */
+}
+
+.bio-text {
+    max-width: 600px; /* Adjusts text container width */
+    text-align: justify; /* Improves readability of the paragraph */
+}
+
+.section-title {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.works-container, .blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.work-item, .blog-post {
+    max-width: 300px;
+}
+
+.work-image, .blog-image {
+    width: 100%;
+    height: auto; /* Ensures the image maintains its aspect ratio */
+    border-radius: 5px; /* Optional: Adds a slight rounding to the image corners for a softer look */
+}
+
+.work-description, .blog-description {
+    text-align: center;
+    margin-top: 10px;
+}
