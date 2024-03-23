@@ -12,6 +12,9 @@
     
     <!-- Custom CSS -->
     <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+
 </head>
 <body>
 
@@ -45,91 +48,132 @@
     </nav>
 </header>
 
-<main>
-    <section id="home">
-        <h1>Welcome to My Portfolio</h1>
-    </section>
 
-    <section id="about" class="about-section">
-        <h2 class="section-title">About Me</h2>
-        <div class="profile-container">
-            <img src="images/profile.jpg" alt="Profile Photo" class="profile-photo">
-            <div class="bio-text">
-                <p>
-                    Hello! I'm a passionate web developer and AI enthusiast with a keen interest in generative AI technologies. 
-                    With a background in computer science, I've spent the last few years exploring the intersection of technology and creativity, 
-                    working on various projects that harness the power of AI to generate innovative and dynamic solutions. 
-                    I'm always eager to learn more and take on challenging projects that push the boundaries of what's possible.
-                </p>
+
+
+<div class="content-container">
+    <main>
+        <section id="home">
+            <h1>Welcome to My Portfolio</h1>
+        </section>
+    
+        <section id="about" class="about-section">
+            <h2 class="section-title">About Me</h2>
+            <div class="profile-container">
+                <img src="images/profile.jpg" alt="Profile Photo" class="profile-photo">
+                <div class="bio-text">
+                    <p>
+                        Hello! I'm a passionate web developer and AI enthusiast with a keen interest in generative AI technologies. 
+                        With a background in computer science, I've spent the last few years exploring the intersection of technology and creativity, 
+                        working on various projects that harness the power of AI to generate innovative and dynamic solutions. 
+                        I'm always eager to learn more and take on challenging projects that push the boundaries of what's possible.
+                    </p>
+                </div>
             </div>
+        </section>
+        
+        
+        
+        
+        <section id="works" class="works-section">
+            <h2 class="section-title">My Works</h2>
+            <div class="works-container">
+                <!-- Repeat the work-item structure for each project as needed -->
+                <div class="work-item">
+                    <img src="images/project1.jpg" alt="Project 1" class="work-image">
+                    <p class="work-description">Exploring the capabilities of generative AI to transform the design process, leading to unique and efficient solutions.</p>
+                </div>
+                <div class="work-item">
+                    <img src="images/project2.jpg" alt="Project 2" class="work-image">
+                    <p class="work-description">Developing a generative AI model to produce creative content, enhancing storytelling and content creation workflows.</p>
+                </div>
+                <!-- Additional projects here -->
+                <div class="work-item">
+                    <img src="images/project1.jpg" alt="Project 1" class="work-image">
+                    <p class="work-description">Exploring the capabilities of generative AI to transform the design process, leading to unique and efficient solutions.</p>
+                </div>
+                <div class="work-item">
+                    <img src="images/project2.jpg" alt="Project 1" class="work-image">
+                    <p class="work-description">Exploring the capabilities of generative AI to transform the design process, leading to unique and efficient solutions.</p>
+                </div>
+            </div>
+        </section>
+        
+        
+    
+        <section id="blog" class="blog-section">
+            <h2 class="section-title">Blog</h2>
+            <div class="blog-container">
+                <!-- Repeat the article structure for each blog post as needed -->
+                <article class="blog-post">
+                    <img src="images/blog1.jpg" alt="Blog Post 1" class="blog-image">
+                    <p class="blog-description">How generative AI is redefining creative expression across industries, from art to design, offering endless possibilities.</p>
+                </article>
+                <article class="blog-post">
+                    <img src="images/blog2.jpg" alt="Blog Post 2" class="blog-image">
+                    <p class="blog-description">Examining the ethical implications of generative AI in content creation and the importance of responsible AI use.</p>
+                </article>
+                <article class="blog-post">
+                    <img src="images/blog1.jpg" alt="Blog Post 1" class="blog-image">
+                    <p class="blog-description">How generative AI is redefining creative expression across industries, from art to design, offering endless possibilities.</p>
+                </article>
+                <article class="blog-post">
+                    <img src="images/blog2.jpg" alt="Blog Post 1" class="blog-image">
+                    <p class="blog-description">How generative AI is redefining creative expression across industries, from art to design, offering endless possibilities.</p>
+                </article>
+            </div>
+        </section>
+        
+        
+    
+        <section id="contact">
+            <h2>Contact</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="nameSurname" class="form-label">Name and Surname</label>
+                    <input type="text" class="form-control" id="nameSurname" required>
+                </div>
+                <div class="mb-3">
+                    <label for="emailAddress" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="emailAddress" required>
+                </div>
+                <div class="mb-3">
+                    <label for="messageText" class="form-label">Message</label>
+                    <textarea class="form-control" id="messageText" rows="3" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send</button>
+            </form>
+        </section>
+        
+    </main>
+    <aside class="sidebar">
+        <h3>Announcements</h3>
+        <div class="announcement-item">
+            <h4>New Project Launch!</h4>
+            <p>We're excited to announce the launch of our latest project, "AI Art Generator". Check it out now!</p>
+            <a href="#" class="announcement-link">Read More</a>
         </div>
-    </section>
-    
-    
-    <section id="works" class="works-section">
-        <h2 class="section-title">My Works</h2>
-        <div class="works-container">
-            <!-- Repeat the work-item structure for each project as needed -->
-            <div class="work-item">
-                <img src="images/project1.jpg" alt="Project 1" class="work-image">
-                <p class="work-description">Exploring the capabilities of generative AI to transform the design process, leading to unique and efficient solutions.</p>
-            </div>
-            <div class="work-item">
-                <img src="images/project2.jpg" alt="Project 2" class="work-image">
-                <p class="work-description">Developing a generative AI model to produce creative content, enhancing storytelling and content creation workflows.</p>
-            </div>
-            <!-- Additional projects here -->
+        <div class="announcement-item">
+            <h4>Upcoming Webinar</h4>
+            <p>Join us for an insightful webinar on "The Future of AI in Web Development" next Thursday at 3 PM. Don't miss it!</p>
+            <a href="#" class="announcement-link">Register Here</a>
         </div>
-    </section>
-    
-    
-
-    <section id="blog" class="blog-section">
-        <h2 class="section-title">Blog</h2>
-        <div class="blog-container">
-            <!-- Repeat the article structure for each blog post as needed -->
-            <article class="blog-post">
-                <img src="images/blog1.jpg" alt="Blog Post 1" class="blog-image">
-                <p class="blog-description">How generative AI is redefining creative expression across industries, from art to design, offering endless possibilities.</p>
-            </article>
-            <article class="blog-post">
-                <img src="images/blog2.jpg" alt="Blog Post 2" class="blog-image">
-                <p class="blog-description">Examining the ethical implications of generative AI in content creation and the importance of responsible AI use.</p>
-            </article>
+        <div class="announcement-item">
+            <h4>Blog Post: AI Trends 2024</h4>
+            <p>Explore the latest trends in AI that are shaping 2024 and beyond in our newest blog post.</p>
+            <a href="#" class="announcement-link">Read More</a>
         </div>
-    </section>
+    </aside>
     
-    
+</div>
 
-    <section id="contact">
-        <h2>Contact</h2>
-        <form>
-            <div class="mb-3">
-                <label for="nameSurname" class="form-label">Name and Surname</label>
-                <input type="text" class="form-control" id="nameSurname" required>
-            </div>
-            <div class="mb-3">
-                <label for="emailAddress" class="form-label">Email Address</label>
-                <input type="email" class="form-control" id="emailAddress" required>
-            </div>
-            <div class="mb-3">
-                <label for="messageText" class="form-label">Message</label>
-                <textarea class="form-control" id="messageText" rows="3" required></textarea>
-            </div>
-            <button type="submit" class="btn btn-primary">Send</button>
-        </form>
-    </section>
-    
-</main>
-
-<aside>
-    <h3>Announcements</h3>
-    <!-- Announcements go here -->
-</aside>
 
 <footer>
     <p>© 2024 My Portfolio</p>
 </footer>
+
+<button id="backToTopBtn" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
 
 <!-- This me Serhat Çağrı Görgülü :) I should update bootstrap.js and jquery.js here -->
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>

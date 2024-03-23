@@ -1,53 +1,118 @@
+/* General Body Styling */
 body {
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
-header, footer {
-    background-color: #f8f9fa;
-    padding: 10px 0;
-    text-align: center;
+/* Content Container */
+.content-container {
+    display: flex;
+    flex-direction: row;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
 }
 
+/* Main Content Styling */
 main {
-    padding: 20px;
+    flex: 1;
+    padding-right: 20px;
 }
 
-aside {
-    background-color: #f0f0f0;
-    padding: 10px;
-    margin: 20px 0;
-}
-
+/* About Section */
 .about-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     padding: 20px;
-    background-color: #f9f9f9;
-}
-
-.section-title {
-    color: #333;
-    text-align: center;
-    margin-bottom: 20px;
+    gap: 20px;
 }
 
 .profile-container {
     display: flex;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
-    gap: 20px;
+    text-align: center;
+    width: 100%;
 }
 
 .profile-photo {
     width: 150px;
     height: 150px;
     border-radius: 50%;
-    object-fit: cover; /* Ensures the photo covers the space without losing aspect ratio */
+    object-fit: cover;
 }
 
 .bio-text {
-    max-width: 600px; /* Adjusts text container width */
-    text-align: justify; /* Improves readability of the paragraph */
+    max-width: 600px;
 }
 
+@media (min-width: 768px) {
+    .profile-container {
+        flex-direction: row;
+        align-items: start;
+        text-align: left;
+    }
+    .profile-photo {
+        margin-right: 20px;
+    }
+}
+
+@media (max-width: 480px) {
+    .profile-photo {
+        width: 120px;
+        height: 120px;
+    }
+}
+
+/* Sidebar Styling */
+.sidebar {
+    width: 300px;
+    padding: 20px;
+    background-color: #f1f1f1;
+    height: auto;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+.announcement-item {
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 15px;
+    margin-bottom: 15px;
+}
+
+.announcement-item:last-child {
+    border-bottom: none;
+}
+
+.announcement-link {
+    color: #007bff;
+    text-decoration: none;
+}
+
+.announcement-link:hover {
+    text-decoration: underline;
+}
+
+/* Responsive Adjustments for Sidebar and Main Content */
+@media (max-width: 992px) {
+    .content-container {
+        flex-direction: column;
+    }
+
+    .sidebar {
+        width: 100%;
+        order: -1;
+    }
+
+    main {
+        padding-right: 0;
+    }
+}
+
+/* Additional Styles */
 .section-title {
     text-align: center;
     margin-bottom: 30px;
@@ -66,11 +131,52 @@ aside {
 
 .work-image, .blog-image {
     width: 100%;
-    height: auto; /* Ensures the image maintains its aspect ratio */
-    border-radius: 5px; /* Optional: Adds a slight rounding to the image corners for a softer look */
+    height: auto;
+    border-radius: 5px;
 }
 
-.work-description, .blog-description {
-    text-align: center;
-    margin-top: 10px;
+.work-description, .blog-description, p {
+    word-wrap: break-word;
+}
+
+/* Hover Effects for Work and Blog Items */
+.work-item:hover, .blog-post:hover {
+    transform: scale(1.05);
+    transition: transform 0.3s ease-in-out;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+/* Footer Styling */
+footer {
+    background-color: #f1f1f1; /* Light grey background */
+    text-align: center; /* Centers the text */
+    padding: 20px 0; /* Adds padding above and below the text */
+    margin-top: 40px; /* Adds some space between the content and the footer */
+    width: 100%; /* Ensures the footer stretches across the screen */
+    box-sizing: border-box; /* Prevents padding from increasing the total width */
+}
+
+footer p {
+    margin: 0; /* Removes default paragraph margin */
+    color: #333; /* Dark grey text color */
+}
+
+#backToTopBtn {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed position */
+    bottom: 20px; /* Place the button at the bottom of the page */
+    right: 30px; /* Place the button 30px from the right */
+    z-index: 99; /* Make sure it sits on top of other content */
+    border: none; /* Remove borders */
+    outline: none; /* Remove outline */
+    background-color: #333; /* Set a background color */
+    color: white; /* Text color */
+    cursor: pointer; /* Pointer cursor on hover */
+    padding: 15px; /* Some padding */
+    border-radius: 10px; /* Rounded corners */
+    font-size: 18px; /* Adjust if necessary for the icon size */
+}
+
+
+#backToTopBtn:hover {
+    background-color: #555; /* Slightly darker shade on hover */
 }
