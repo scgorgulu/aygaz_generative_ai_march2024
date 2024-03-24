@@ -104,7 +104,9 @@ main {
 
     .sidebar {
         width: 100%;
-        order: -1;
+        /* order: -1; */  /* This me Serhat Çağrı Görgülü :) 
+        It is an unwanted property for small screens  */
+
     }
 
     main {
